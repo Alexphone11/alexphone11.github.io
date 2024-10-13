@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="PyQt-Fluent-Widgets     A fluent design widgets library based on PyQt5     [![Version](https:&#x2F;&#x2F;img.shields.io&#x2F;pypi&#x2F;v&#x2F;pyqt-fluent-widgets?color&#x3D;%2334D058&amp;label&#x3D;Version)](https:&#x2F;&#x2F;pypi.org&#x2F;proj">
+<meta property="og:type" content="article">
+<meta property="og:title" content="pyqt">
+<meta property="og:url" content="http://example.com/2024/10/13/README/index.html">
+<meta property="og:site_name" content="嘿嘿的个人博客">
+<meta property="og:description" content="PyQt-Fluent-Widgets     A fluent design widgets library based on PyQt5     [![Version](https:&#x2F;&#x2F;img.shields.io&#x2F;pypi&#x2F;v&#x2F;pyqt-fluent-widgets?color&#x3D;%2334D058&amp;label&#x3D;Version)](https:&#x2F;&#x2F;pypi.org&#x2F;proj">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhiyiYo/PyQt-Fluent-Widgets/master/docs/source/_static/logo.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhiyiYo/PyQt-Fluent-Widgets/master/docs/source/_static/Interface.jpg">
+<meta property="og:image" content="https://img.fastmirror.net/s/2024/02/18/65d22363d4a73.jpg">
+<meta property="article:published_time" content="2024-10-12T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-10-13T04:40:36.577Z">
+<meta property="article:author" content="heihei">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/zhiyiYo/PyQt-Fluent-Widgets/master/docs/source/_static/logo.png">
+
+<link rel="canonical" href="http://example.com/2024/10/13/README/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>pyqt | 嘿嘿的个人博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">嘿嘿的个人博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">月下花林</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/13/README/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="heihei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="嘿嘿的个人博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          pyqt
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-10-13 00:00:00 / 修改时间：12:40:36" itemprop="dateCreated datePublished" datetime="2024-10-13T00:00:00+08:00">2024-10-13</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p align="center">
+  <img width="18%" align="center" src="https://raw.githubusercontent.com/zhiyiYo/PyQt-Fluent-Widgets/master/docs/source/_static/logo.png" alt="logo">
+</p>
+  <h1 align="center">
+  PyQt-Fluent-Widgets
+</h1>
+<p align="center">
+  A fluent design widgets library based on PyQt5
+</p>
+
+
+<div align="center">
+[![Version](https://img.shields.io/pypi/v/pyqt-fluent-widgets?color=%2334D058&label=Version)](https://pypi.org/project/PyQt-Fluent-Widgets)
+[![Download](https://static.pepy.tech/personalized-badge/pyqt-fluent-widgets?period=total&units=international_system&left_color=grey&right_color=brightgreen&left_text=Downloads)]()
+[![GPLv3](https://img.shields.io/badge/License-GPLv3-blue?color=#4ec820)](LICENSE)
+[![Platform Win32 | Linux | macOS](https://img.shields.io/badge/Platform-Win32%20|%20Linux%20|%20macOS-blue?color=#4ec820)]()
+
+</div>
+
+<p align="center">
+English | <a href="docs/README_zh.md">简体中文</a> | <a target="_blank" rel="noopener" href="https://qfluentwidgets.com/">官网</a>
+</p>
+
+<p><img src="https://raw.githubusercontent.com/zhiyiYo/PyQt-Fluent-Widgets/master/docs/source/_static/Interface.jpg" alt="Interface"></p>
+<h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><p>To install lite version (<code>AcrylicLabel</code> is not available):</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install PyQt-Fluent-Widgets -i https://pypi.org/simple/</span><br></pre></td></tr></table></figure>
+<p>Or install full-featured version:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install &quot;PyQt-Fluent-Widgets[full]&quot; -i https://pypi.org/simple/</span><br></pre></td></tr></table></figure>
+
+<p>If you are using PySide2, PySide6 or PyQt6, you can download the code in <a target="_blank" rel="noopener" href="https://github.com/zhiyiYo/PyQt-Fluent-Widgets/tree/PySide2">PySide2</a>, <a target="_blank" rel="noopener" href="https://github.com/zhiyiYo/PyQt-Fluent-Widgets/tree/PySide6">PySide6</a> or <a target="_blank" rel="noopener" href="https://github.com/zhiyiYo/PyQt-Fluent-Widgets/tree/PyQt6">PyQt6</a> branch.</p>
+<p>The <a target="_blank" rel="noopener" href="https://qfluentwidgets.com/pages/pro">Pro version</a> library contains more advance components. You can download <code>PyQt-Fluent-Widgets-Pro-Gallery.zip</code> from the <a target="_blank" rel="noopener" href="https://github.com/zhiyiYo/PyQt-Fluent-Widgets/releases">release page</a> for preview purposes.</p>
+<p>C++ QFluentWidgets require purchasing a license from the <a target="_blank" rel="noopener" href="https://qfluentwidgets.com/price">official website</a>. You can also download the compiled demo <code>C++_QFluentWidgets.zip</code> from the <a target="_blank" rel="noopener" href="https://github.com/zhiyiYo/PyQt-Fluent-Widgets/releases">release page</a>.</p>
+<blockquote>
+<p><strong>Warning</strong><br>Don’t install PyQt-Fluent-Widgets, PyQt6-Fluent-Widgets, PySide2-Fluent-Widgets and PySide6-Fluent-Widgets at the same time, because their package names are all <code>qfluentwidgets</code>.</p>
+</blockquote>
+<h2 id="Run-Example"><a href="#Run-Example" class="headerlink" title="Run Example"></a>Run Example</h2><p>After installing PyQt-Fluent-Widgets package using pip, you can run any demo in the examples directory, for example:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd examples/gallery</span><br><span class="line">python demo.py</span><br></pre></td></tr></table></figure>
+
+<p>If you encounter <code>ImportError: cannot import name &#39;XXX&#39; from &#39;qfluentwidgets&#39;</code>, it indicates that the package version you installed is too low. You can replace the mirror source with <a target="_blank" rel="noopener" href="https://pypi.org/simple">https://pypi.org/simple</a> and reinstall again.</p>
+<h2 id="Documentation"><a href="#Documentation" class="headerlink" title="Documentation"></a>Documentation</h2><p>Want to know more about PyQt-Fluent-Widgets? Please read the <a target="_blank" rel="noopener" href="https://qfluentwidgets.com/">help document</a> 👈</p>
+<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>PyQt-Fluent-Widgets is licensed under <a href="./LICENSE">GPLv3</a> for non-commercial project. For commercial use, please purchase a <a target="_blank" rel="noopener" href="https://qfluentwidgets.com/price">commercial license</a>.</p>
+<p>Copyright © 2021 by zhiyiYo.</p>
+<h2 id="Video-Demonstration"><a href="#Video-Demonstration" class="headerlink" title="Video Demonstration"></a>Video Demonstration</h2><p>Check out this <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV12c411L73q">▶ example video</a> that shows off what PyQt-Fluent-Widgets are capable of 🎉</p>
+<h2 id="Work-with-Designer"><a href="#Work-with-Designer" class="headerlink" title="Work with Designer"></a>Work with Designer</h2><p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=7UCmcsOlhTk">Fluent Client</a> integrates designer plugins, supporting direct drag-and-drop usage of QFluentWidgets components in Designer. You can purchase the client from <a target="_blank" rel="noopener" href="https://item.taobao.com/item.htm?ft=t&id=767961666600">TaoBao</a>.</p>
+<p><img src="https://img.fastmirror.net/s/2024/02/18/65d22363d4a73.jpg" alt="Fluent Designer"></p>
+<h2 id="See-Also"><a href="#See-Also" class="headerlink" title="See Also"></a>See Also</h2><p>Here are some projects based on PyQt-Fluent-Widgets:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://qmaterialwidgets.vercel.app/"><strong>zhiyiYo&#x2F;QMaterialWidgets</strong>: A material design widgets library based on PyQt&#x2F;PySide</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/zhiyiYo/Groove"><strong>zhiyiYo&#x2F;Groove</strong>: A cross-platform music player based on PyQt5</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/zhiyiYo/Alpha-Gobang-Zero"><strong>zhiyiYo&#x2F;Alpha-Gobang-Zero</strong>: A gobang robot based on reinforcement learning</a></li>
+</ul>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows/apps/design/"><strong>Windows design</strong>: Design guidelines and toolkits for creating native app experiences</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/microsoft/WinUI-Gallery"><strong>Microsoft&#x2F;WinUI-Gallery</strong>: An app demonstrates the controls available in WinUI and the Fluent Design System</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2024/09/17/%E4%BD%9C%E4%B8%9A1/" rel="prev" title="作业">
+      <i class="fa fa-chevron-left"></i> 作业
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2024/10/13/dl/" rel="next" title="">
+       <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">
+  PyQt-Fluent-Widgets
+</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Install"><span class="nav-number">1.1.</span> <span class="nav-text">Install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Run-Example"><span class="nav-number">1.2.</span> <span class="nav-text">Run Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Documentation"><span class="nav-number">1.3.</span> <span class="nav-text">Documentation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#License"><span class="nav-number">1.4.</span> <span class="nav-text">License</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Video-Demonstration"><span class="nav-number">1.5.</span> <span class="nav-text">Video Demonstration</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Work-with-Designer"><span class="nav-number">1.6.</span> <span class="nav-text">Work with Designer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#See-Also"><span class="nav-number">1.7.</span> <span class="nav-text">See Also</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">1.8.</span> <span class="nav-text">Reference</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">heihei</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">heihei</span>
+</div>
+<!--
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+-->
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
